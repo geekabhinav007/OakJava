@@ -2,8 +2,8 @@
 
 1. List four important features of Java language. 
 
-> Object-Oriented 
-Platform Independent
-Secure
-Robust
-Multithreaded
+1. Object-Oriented 
+1. Platform Independent
+1. Secure
+1. Robust
+1. Multithreaded
