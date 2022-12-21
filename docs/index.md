@@ -59,3 +59,13 @@ In other words, it is the type of object being referred to that determines which
 <br>
 
 **StringBuffer** class is used to create mutable (modifiable) string. The StringBuffer class in java is same as String class except it is mutable i.e. it can be changed.
+
+### 10. What is java Token?
+
+The Java compiler breaks the line of code into text (words) is called **Java tokens**. These are the smallest element of the Java program. The Java compiler identified these words as tokens. These tokens are separated by the delimiters. It is useful for compilers to detect errors. Remember that the delimiters are not part of the Java tokens.
+<br>
+
+```token <= identifier | keyword | separator | operator | literal | comment ```
+In Java, the program contains classes and methods. Further, the methods contain the expressions and statements required to perform a specific operation. These statements and expressions are made up of tokens.
+
+![token image](https://static.javatpoint.com/core/images/java-tokens.png)
