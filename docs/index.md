@@ -48,9 +48,9 @@ When an error occurs within a method, the method creates an object and hands it 
 ### 8. What is dynamic method dispatch? 
 
 **Dynamic method dispatch** is the mechanism in which a call to an overridden method is resolved at run time instead of compile time. This is an important concept because of how Java implements run-time polymorphism.
-<br>
+<br><br>
 Java uses the principle of _‘a superclass reference variable can refer to a subclass object’_ to resolve calls to overridden methods at run time. When a superclass reference is used to call an overridden method, Java determines which version of the method to execute based on the type of the object being referred to at the time call.
-<br>
+<br><br>
 In other words, it is the type of object being referred to that determines which version of an overridden method will be executed.
 
 ### 9. Use of String buffer class
