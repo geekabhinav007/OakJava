@@ -43,7 +43,7 @@ When an error occurs within a method, the method creates an object and hands it 
 
 ### 7. What is ServerSocket?
 
-**ServerSocket is a java.net class that provides a system-independent implementation of the server side of a client/server socket connection. ServerSocket Class is used for providing system-independent implementation of the server-side of a client/server Socket Connection. The constructor for ServerSocket throws an exception if it can’t listen on the specified port (for example, the port is already being used).**
+**ServerSocket is a java.net class that provides a system-independent implementation of the server side of a client/server socket connection.** ServerSocket Class is used for providing system-independent implementation of the server-side of a client/server Socket Connection. The constructor for ServerSocket throws an exception if it can’t listen on the specified port (for example, the port is already being used).
 
 ### 8. What is dynamic method dispatch? 
 
