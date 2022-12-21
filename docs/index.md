@@ -52,3 +52,9 @@ When an error occurs within a method, the method creates an object and hands it 
 Java uses the principle of _‘a superclass reference variable can refer to a subclass object’_ to resolve calls to overridden methods at run time. When a superclass reference is used to call an overridden method, Java determines which version of the method to execute based on the type of the object being referred to at the time call.
 <br>
 In other words, it is the type of object being referred to that determines which version of an overridden method will be executed.
+
+### 9. Use of String buffer class
+
+**StringBuffer** is a peer class of **String** that provides much of the functionality of strings. The string represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end. It will automatically grow to make room for such additions and often has more characters preallocated than are actually needed, to allow room for growth.
+<br>
+StringBuffer class is used to create mutable (modifiable) string. The StringBuffer class in java is same as String class except it is mutable i.e. it can be changed.
