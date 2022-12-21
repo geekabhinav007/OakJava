@@ -9,8 +9,7 @@ Robust
 Multithreaded
 ```
 ### 2. What is JVM?
-```
-The JVM stands for Java Virtual Machine. A program’s execution is divided into three stages. A Java program is written, compiled and then run.```
+```The JVM stands for Java Virtual Machine. A program’s execution is divided into three stages. A Java program is written, compiled and then run.```
 
 ![JVM](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/621/original/JVM.png?1643379022)
 
