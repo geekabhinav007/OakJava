@@ -66,6 +66,7 @@ The Java compiler breaks the line of code into text (words) is called **Java tok
 <br>
 
 ```token <= identifier | keyword | separator | operator | literal | comment ```
+<br>
 In Java, the program contains classes and methods. Further, the methods contain the expressions and statements required to perform a specific operation. These statements and expressions are made up of tokens.
 
 ![token image](https://static.javatpoint.com/core/images/java-tokens.png)
