@@ -70,3 +70,22 @@ The Java compiler breaks the line of code into text (words) is called **Java tok
 In Java, the program contains classes and methods. Further, the methods contain the expressions and statements required to perform a specific operation. These statements and expressions are made up of tokens.
 
 ![token image](https://static.javatpoint.com/core/images/java-tokens.png)
+
+### 11. Argument and Parameter.
+
+There is a major difference between Argument and Parameter, Actually Argument is the actual value where as parameter is a varible.
+
+Example:
+
+```java
+public static int sum(int a, int b){ // Parameters
+    return a+b;
+}
+public static void main(String [] args){
+    int a = 5;
+    int b = 25;
+    int c;
+    c = sum(a,b);  // Argument
+    int d = sum(4,7); // Argument
+}
+```
