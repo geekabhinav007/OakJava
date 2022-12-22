@@ -89,3 +89,8 @@ public static void main(String [] args){
     int d = sum(4,7); // Argument
 }
 ```
+### 12. Concurrency and Parallelism is different things.
+
+__Concurrency__ is about multiple tasks which start, run, and complete in **overlapping time periods**, in no specific order. __Parallelism__ is about multiple tasks or subtasks of the same task that literally **run at the same time** on a hardware with multiple computing resources like multi-core processor.
+
+![Image for Conccurrency and parallelism](https://1.bp.blogspot.com/-TKQSNUbkqNs/W_UCljTAeSI/AAAAAAAAI3Y/FK_seKThNSghF1eNh0wkb7fwTcPyxanyQCLcBGAs/s1600/1.jpg)
