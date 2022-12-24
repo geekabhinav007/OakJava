@@ -236,4 +236,119 @@ List of prime number from 0 to 10
 5
 7
 ```
+### 16. What are different types of Inheritance supported by Java explain in detail?
+
+**What is Inheritance** :- Inheritance is a propery that promtes code resuability. It is one of the most imporatnt pillar of Object Oriented Programming. It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.  
+
+**Types of Inheritance**<br>
+1. Single Inheritance - Subclasses inherit the features of a single superclass via single inheritance. Class A acts as a base class for the derived class B.<br>
+
+![SI](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/645/original/Single_Inheritance.png?1643385936)
+<br>
+
+**Program**
+
+```java
+
+class Human {
+    public int age;
+
+    public void getAge(int age) {
+        System.out.println("I am of Human Class and my age is " + age);
+    }
+}
+
+class Coder extends Human {
+    public void eat() {
+        System.out.println("I am Eating.");
+    }
+
+    public void sleep() {
+        System.out.println("I am Sleeping.");
+    }
+
+    public void Code() {
+        System.out.println("I am Coding.");
+    }
+}
+
+public class Inheritance {
+    public static void main(String[] args) {
+        Coder abhinav = new Coder();
+        int x = 21;
+        abhinav.getAge(x);
+        abhinav.sleep();
+        abhinav.eat();
+        abhinav.Code();
+
+    }
+}
+```
+**Output**
+
+```bash
+geek@g3:~/java_program/OOPS$ cd "/home/geek/java_program/OOPS/" && javac Inheritance.java && java Inheritance
+I am of Human Class and my age is 21
+I am Sleeping.
+I am Eating.
+I am Coding.
+```
+2. Multilevel Inheritance: In Multilevel Inheritance, a derived class inherits from a base class, and the derived class also serves as the base class for other classes. Class A serves as a base class for derived class B, which in turn serves as a base class for derived class C in the diagram below. In Java, a class cannot directly access the members of a grandparent.<br>
+![MLI](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/646/original/Multilevel_Inheritance.png?1643385985)
+
+**Program**
+
+
+```java
+
+
+```
+**Output**
+
+```bash
+```
+3. Hierarchical Inheritance - One class serves as a superclass (base class) for several subclasses in Hierarchical Inheritance. Class A acts as a base class for the derived classes B, C, and D in the diagram below.<br>
+![HI](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/647/original/Hierarchical_Inheritance.png?1643386044)
+
+**Program**
+
+```java
+
+
+```
+**Output**
+
+```bash
+```
+4. Multiple Inheritance: When a class inherits from more than one class, it is referred to as multiple inheritances. The below image shows class C inheriting from classes A and B.<br>
+__Java does not support multiple inheritances as it can lead to ambiguity. We can implement the concept of multiple inheritances through the use of interfaces__
+<br>
+
+![MLI](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/648/original/Multiple_Inheritance.png?1643386118)
+
+**Program**
+
+```java
+
+
+```
+**Output**
+
+```bash
+```
+
+
+5. Hybrid Inheritance - Hybrid Inheritance is a blend of two or more of the inheritance kinds listed above. The below figure shows two classes B and C inheriting from class A and a class D inheriting from both classes B and C<br>
+![MLI](https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/650/original/Hybrid_Inheritance.png?1643386218)
+
+**Program**
+```java
+
+
+```
+**Output**
+
+```bash
+```
+
 
