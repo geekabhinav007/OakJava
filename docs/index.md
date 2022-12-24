@@ -94,3 +94,146 @@ public static void main(String [] args){
 __Concurrency__ is about multiple tasks which start, run, and complete in **overlapping time periods**, in no specific order. __Parallelism__ is about multiple tasks or subtasks of the same task that literally **run at the same time** on a hardware with multiple computing resources like multi-core processor.
 
 ![Image for Conccurrency and parallelism](https://1.bp.blogspot.com/-TKQSNUbkqNs/W_UCljTAeSI/AAAAAAAAI3Y/FK_seKThNSghF1eNh0wkb7fwTcPyxanyQCLcBGAs/s1600/1.jpg)
+
+### 13 Write Short note on: 
+-  JVM 
+-  Finalize vs final 
+-  Super keyword 
+-  Command line arguments
+
+**JVM** :- 
+
+### 14. Write a program in java to do the following :
+-  To swap the two numbers without using the third variable.
+-  Factorial of a number using recursion
+
+**Swap Using without Temporary Varibale**
+```java
+import java.util.*;;
+public class Swap {
+    public static void swapWithoutTemp(int x, int y){
+        x = x + y;
+        y = x - y;
+        x = x - y;
+        System.out.println("After Swapping");
+
+        System.out.println(" x = " + x + " y = " + y);
+    }
+    public static void main(String[] args) {
+        int x;
+        int y;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of X ");
+        x = sc.nextInt();
+        System.out.println("Enter the value of Y ");
+        y = sc.nextInt();
+        System.out.println("Before Swapping");
+        System.out.println(" x = " + x + " y = " + y);
+        swapWithoutTemp(x, y);
+        
+    }
+}
+```
+
+**Output**
+```bash
+geek@g3:~/java_program/praticeESE$ cd "/home/geek/java_program/praticeESE/" && javac Swap.java && java Swap
+Enter the value of X 
+5
+Enter the value of Y 
+15
+Before Swapping
+ x = 5 y = 15
+After Swapping
+ x = 15 y = 5
+ ```
+
+**Factorial Program Recursively**
+
+```java
+import java.util.*;
+
+public class FactorialRec {
+    public static int factorial(int n) {
+        // base Case
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the value of N ");
+        n = sc.nextInt();
+        int factorial = factorial(n);
+        System.out.println(factorial);
+    }
+
+}
+```
+
+**Output**
+```bash
+geek@g3:~/java_program/praticeESE$ cd "/home/geek/java_program/praticeESE/" && javac FactorialRec.java && java FactorialRec
+Enter the value of N 
+10
+3628800
+geek@g3:~/java_program/praticeESE$ cd "/home/geek/java_program/praticeESE/" && javac FactorialRec.java && java FactorialRec
+Enter the value of N 
+5
+120
+```
+
+### 15. Write a program in Java to find first n prime numbers, where n is any integer and should be taken
+### as input the user.
+
+**Program**
+```java
+import java.util.*;
+
+public class Prime {
+    public static boolean flag = true;
+
+    public static void primeNo(int n) {
+        System.out.println("List of prime number from 0 to "+ n);
+        for (int j = 2; j < n; j++) {
+            flag = true;
+            for (int i = 2; i < j; i++) {
+                if (j % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag == true) {
+                System.out.println(j);
+
+            }
+
+        }
+    }
+
+    public static void main(String[] args) {
+        int n ;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number at which you want to print Prime Number.");
+        n = sc.nextInt();
+        primeNo(n);
+
+    }
+
+}
+```
+**Output**
+```bash
+geek@g3:~/java_program/Basic Java Code$ cd "/home/geek/java_program/Basic Java Code/" && javac Prime.java && java Prime
+Enter the number at which you want to print Prime Number.
+10
+List of prime number from 0 to 10
+2
+3
+5
+7
+```
+
