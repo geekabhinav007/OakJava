@@ -11,7 +11,5 @@ public class ExceptionBasic{
     Scanner sc = new Scanner(System.in);
     int x = sc.nextInt();
     System.out.println(100/x);
-
-       
     }
 }
