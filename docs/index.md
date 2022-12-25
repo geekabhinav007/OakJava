@@ -869,6 +869,101 @@ public class Append {
 
 ```java
 
+public class lowTOupANDupTOlow {
+
+    static String lowerToUpper(String s) {
+        char ch = ' ';
+        String result = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
+                ch = (char) (s.charAt(i) - 32);
+            } else {
+                // For character other than small a to z
+                ch = s.charAt(i);
+            }
+            result += ch;
+        }
+        return result;
+
+    }
+    static String upperToLower(String s) {
+        char ch = ' ';
+        String result = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
+                ch = (char) (s.charAt(i) + 32);
+            } else {
+                // For character other than small A to Z
+                ch = s.charAt(i);
+            }
+            result += ch;
+        }
+        return result;
+
+    }
+
+    public static void main(String[] args) {
+
+        String lowerString = "abhinav is good boy";
+        String upperString = "I AM ABHINAV";
+
+        // Method-1
+        System.out.println(lowerString.toUpperCase());
+        System.out.println(upperString.toLowerCase());
+
+        // Method-2
+        String str = lowerToUpper(lowerString);
+        System.out.println(str);
+        String str1 = upperToLower(upperString);
+        System.out.println(str1);
+
+
+    }
+}
+
+```
+
+#### Compare two Strings
+
+```java
+public class Compare {
+    public static void main(String[] args) {
+        String str = "abc";
+        String str1 = "fcd";
+        System.out.println(str.compareTo(str1));
+
+        /*
+         * Comparing is str > str1 return +ve number or
+         * str < str1 return -ve number or
+         * str = str1 return 0
+         */
+
+    }
+}
+```
+#### Reverse a String
+
+```java
+
+public class Reverse {
+    public static void main(String[] args) {
+
+        String originalString = "Abhinav is Good Boy.";
+        StringBuilder originalstr = new StringBuilder("Abhinav is Good Boy.");
+
+        // Method-1 using StrinBuilder Class
+        originalstr.reverse();
+        System.out.println(originalstr);
+
+        // Method 2
+        
+        String result = "";
+        for (int i = originalString.length()-1; i >=0 ; i--) {
+            result += originalString.charAt(i); 
+        }
+        System.out.println(result);
+    }
+}
 ```
 
 ### 46 Explain the concept of Java Streams. Write a program to copy the content of one text file to another. && I/O streams
