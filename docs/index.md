@@ -538,20 +538,34 @@ public class Interface {
 }
 ```
 
-### 19 
 
-### 20  
 
-### 21  
+### 19 What is use of keyword throws?  && Throw Vs Throws
 
-### 22 What is use of keyword throws?  && Throw Vs Throws 
+Both **throw** and **throws** are concepts of exception handling in Java. The throws keyword is used to declare which exceptions can be thrown from a method, while the throw keyword is used to explicitly throw an exception within a method or block of code.
 
-### 23 What is a Wrapper Class?
+<br>
 
-### 24 
+The **throws** keyword is used in a method signature and declares which exceptions can be thrown from a method. The throws keyword can be useful for propagating exceptions in the call stack and allows exceptions to not necessarily be handled within the method that declares these exceptions.
 
-### 25  
+**Syntax**
+```java
+type method (arguments) throws Exception1, Exception2, … {  }
+```
 
+<br>
+On the other hand, the throw keyword is used within a method body, or any block of code, and is used to explicitly throw a single exception. The throw keyword can be useful for throwing exceptions based on certain conditions within a code block and for throwing custom exceptions.
+
+**Syntax**
+```java
+throw throwableObject;
+```
+**Example**
+
+```java
+
+### 20 What is a Wrapper Class?
+ 
 ### 26 Explain about the applet and its life cycle. || Explain about the applet and its life cycle. || Difference between application and applet. || How do we pass parameters to applets in Java && How do we pass parameters to applets in Java?
 
 ### 27 socket programming
