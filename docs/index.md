@@ -238,7 +238,7 @@ List of prime number from 0 to 10
 5
 7
 ```
-### 16. What are different types of Inheritance supported by Java explain in detail?
+### 16. What are different types of Inheritance supported by Java explain in detail? && What is multilevel inheritance? Write a program to demonstrate it.
 
 **What is Inheritance** :- Inheritance is a propery that promtes code resuability. It is one of the most imporatnt pillar of Object Oriented Programming. It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.  
 
@@ -388,3 +388,63 @@ geek@g3: javac CLA.java
 geek@g3: java CLA abhinav
 My first Command line argument is abhinav
 ```
+### 18' Demonstrate the use of Super keyword in inheritance with the help of example. 
+### 18 What is difference between interface and abstract class? || xplain about interfaces. How they are different from the abstract classes? 
+
+### 19 What is the functionality of using is alive ()?
+
+### 20 What are unchecked exceptions ? 
+
+### 21 What is difference between thread and a process? 
+
+### 22 What is use of keyword throws?  && Throw Vs Throws 
+
+### 23 What is a Wrapper Class?
+
+### 24 What is use of final keyword
+
+### 25 Define run time Exception. 
+
+### 26 Explain about the applet and its life cycle. || Explain about the applet and its life cycle. || Difference between application and applet. || How do we pass parameters to applets in Java && How do we pass parameters to applets in Java?
+
+### 27 socket programming
+
+### 28 Define garbage collection
+
+### 29 __this__ keyword
+
+### 30 What is the meaning of first line of java program “public static void main (String args[])? 
+
+### 31 JVM is a platform dependent __(T/F)__. Justify your answer. 
+
+### 32 Static members, type casting.
+
+### 33 What is the difference between final,Finalize and finally?
+
+### 34 Diff bw operator precedence and associativity.
+
+### 35 OOP principles
+
+### 36 Explain what makes Java as platform independent language.
+
+### 37 Explain Multithreading. && How Java implements its Thread model? how we set priorities in threads. && Create Thread with both methods. (runnable interface + Thread Class).  && Thread Synchronization && Write a note on inter-thread communication and discuss how it can be accomplished. 
+
+### 38 JDBC
+
+### 39 Demonstrate the creation and handling of our own exception using any program. || What is exception handling? How multiple exceptions are caught in a single program? WAP to demonstrate the use of custom exception.  && Multiple catch with single try statement
+
+### 40  Explain the visibility controls in Java. 
+
+### 41 Write a program in Java to demonstrate operator overriding || Write programs to demonstrate the difference between method overloading and method overriding in Java?
+
+### 42 JIT Compilation
+
+### 43 Write a program to implement the Fibonacci series using for loop control structure. 
+
+### 44 What is string handling? && string handling functions && Write a program to append two strings in java. Write a program to reverse the string. && Write program in Java to convert a string in lower case to uppercase. && Write a program which produces alphabetical ordering of strings. For example if the input strings are “WAN”, “LAN” and “MAN” then program should output “LAN”, “MAN” and “WAN”. && Write a program to compare the two strings in java? && Explain different string handling functions and their syntax in java language
+
+### 45 Why there is no multiple inheritance in java? How to implement multiple inheritance in java using interface?
+
+### 46 Explain the concept of Java Streams. Write a program to copy the content of one text file to another. && I/O streams 
+
+### 47 Swap Program without using third variable, using * and / operators, Without using arithmetic operators (or using bitwise operator or using XOR operation).
