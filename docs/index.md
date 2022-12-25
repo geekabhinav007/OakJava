@@ -66,9 +66,21 @@ The most common Java unchecked exception is the good old NullPointerException wh
 
 **summarize** the difference between a checked and unchecked exception is that a checked exception is caught at compile time whereas a runtime or unchecked exception is, as it states, at runtime. A checked exception must be handled either by re-throwing or with a try catch block, a runtime isn’t required to be handled. An unchecked exception is a programming error and are fatal, whereas a checked exception is an exception condition within your codes logic and can be recovered or retried from.
 
-### 7. What is ServerSocket?
+### 7. What is ServerSocket? && What is socket programming?
+
 
 **ServerSocket is a java.net class that provides a system-independent implementation of the server side of a client/server socket connection.** ServerSocket Class is used for providing system-independent implementation of the server-side of a client/server Socket Connection. The constructor for ServerSocket throws an exception if it can’t listen on the specified port (for example, the port is already being used).
+
+<br>
+
+**Socket programming**
+
+Socket programming is a way of connecting two nodes on a network to communicate with each other. One socket (node) listens on a particular port at an IP, while other socket reaches out to the other in order to form a connection. 
+
+**Socket**
+
+A socket in Java is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to.
+
 
 ### 8. What is dynamic method dispatch? 
 
@@ -659,11 +671,28 @@ public class appletsLifeCycle extends Applet {
 
 ```
 
-### 27 socket programming
-
 ### 28 Define garbage collection
 
+__Java garbage collection is the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program. Eventually, some objects will no longer be needed. The garbage collector finds these unused objects and deletes them to free up memory.__
+<br>
+
+All its garbage collectors follow the same basic process. In the first step, __unreferenced objects are identified and marked as ready for garbage collection.__ In the second step, __marked objects are deleted.__ Optionally, __memory can be compacted after the garbage collector deletes objects,__ so remaining objects are in a contiguous block at the start of the heap. __The compaction process makes it easier to allocate memory to new objects sequentially after the block of memory allocated to existing objects.__
+
+
 ### 29 __this__ keyword
+
+![this](https://static.javatpoint.com/images/thisr.jpg)
+
+**Usages of this Keyword**
+
+![uses of this keyword](https://static.javatpoint.com/images/usage-of-java-this-keyword.png)
+
+- The this keyword can be used to refer current class instance variable. If there is ambiguity between the instance variables and parameters, this keyword resolves the problem of ambiguity.
+- You may invoke the method of the current class by using the this keyword. If you don't use the this keyword, compiler automatically adds this keyword while invoking the method. 
+- The this() constructor call can be used to invoke the current class constructor. It is used to reuse the constructor. In other words, it is used for constructor chaining.
+- The this keyword can also be passed as an argument in the method. It is mainly used in the event handling.
+- We can pass the this keyword in the constructor also. It is useful if we have to use one object in multiple classes. 
+- We can return this keyword as an statement from the method. In such case, return type of the method must be the class type (non-primitive).
 
 ### 30 What is the meaning of first line of java program “public static void main (String args[])? 
 
