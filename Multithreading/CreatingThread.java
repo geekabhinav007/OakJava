@@ -1,6 +1,6 @@
 // Creatin thread by Extending Thread class.
 
-class MyThread extends Thread{
+class MyThread3 extends Thread{
     @Override
     public void run(){
         int i = 1000;
@@ -23,7 +23,7 @@ class MyThread2 extends Thread{
 }
 public class CreatingThread {
     public static void main(String[] args) {
-        MyThread t1 = new MyThread();
+        MyThread3 t1 = new MyThread3();
         MyThread2 t2 = new MyThread2();
         t1.start();
         t2.start();
