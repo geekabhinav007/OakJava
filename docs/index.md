@@ -597,9 +597,62 @@ It also include methods to unwrap the objects back into the primitive data types
 
 [Wrapper Class Resource](https://www.scaler.com/topics/java/wrapper-classes-in-java/)
 
-### 26 Explain about the applet and its life cycle. || Explain about the applet and its life cycle. || Difference between application and applet. || How do we pass parameters to applets in Java && How do we pass parameters to applets in Java?
+### 26 Explain about the applet and its life cycle. || Explain about the applet and its life cycle. || Difference between application and applet. || How do we pass parameters to applets in Java?
 
 [Applets Code](/Event_Handling/TryingApplets.java)
+
+**Life Cycle of Applets**
+<br>
+
+**init()**: The init() method is the first method to run that initializes the applet. It can be invoked only once at the time of initialization. The web browser creates the initialized objects, i.e., the web browser (after checking the security settings) runs the init() method within the applet.
+<br>
+
+**start()**: The start() method contains the actual code of the applet and starts the applet. It is invoked immediately after the init() method is invoked. Every time the browser is loaded or refreshed, the start() method is invoked. It is also invoked whenever the applet is maximized, restored, or moving from one tab to another in the browser. It is in an inactive state until the init() method is invoked.
+<br>
+
+**stop()**: The stop() method stops the execution of the applet. The stop () method is invoked whenever the applet is stopped, minimized, or moving from one tab to another in the browser, the stop() method is invoked. When we go back to that page, the start() method is invoked again.
+<br>
+
+**destroy()**: The destroy() method destroys the applet after its work is done. It is invoked when the applet window is closed or when the tab containing the webpage is closed. It removes the applet object from memory and is executed only once. We cannot start the applet once it is destroyed.
+<br>
+
+**paint()**: The paint() method belongs to the Graphics class in Java. It is used to draw shapes like circle, square, trapezium, etc., in the applet. It is executed after the start() method and when the browser or applet windows are resized.
+<br>
+![Applet Life Cycle](https://static.javatpoint.com/core/images/applet-life-cycle-in-java.png)
+
+<br>
+
+**Flow of Applet Life Cycle**
+![Flow of applet](https://static.javatpoint.com/core/images/applet-life-cycle-in-java2.png)
+<br>
+
+**Program**
+```java
+import java.applet.Applet;
+
+public class appletsLifeCycle extends Applet {
+    public void init() {
+        // initialized objects
+    }
+
+    public void start() {
+        // code to start the applet
+    }
+
+    public void paint(Graphics graphics) {
+        // draw the shapes
+    }
+
+    public void stop() {
+        // code to stop the applet
+    }
+
+    public void destroy() {  
+        // code to destroy the applet 
+ }
+}
+
+```
 
 ### 27 socket programming
 
