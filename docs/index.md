@@ -282,7 +282,7 @@ List of prime number from 0 to 10
 7
 ```
 
-### 16. What are different types of Inheritance supported by Java explain in detail? && What is multilevel inheritance? Write a program to demonstrate it. && Demonstrate the use of Super keyword in inheritance with the help of example
+### 16. What are different types of Inheritance supported by Java explain in detail? && What is multilevel inheritance? Write a program to demonstrate it. && Demonstrate the use of Super keyword in inheritance with the help of example && Why there is no multiple inheritance in java? How to implement multiple inheritance in java using interface?
 
 **What is Inheritance** :- Inheritance is a propery that promtes code resuability. It is one of the most imporatnt pillar of Object Oriented Programming. It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.  
 
@@ -571,7 +571,7 @@ Both **throw** and **throws** are concepts of exception handling in Java. The th
 
 The **throws** keyword is used in a method signature and declares which exceptions can be thrown from a method. The throws keyword can be useful for propagating exceptions in the call stack and allows exceptions to not necessarily be handled within the method that declares these exceptions.
 
-**Syntax**
+#### Syntax
 
 ```java
 type method (arguments) throws Exception1, Exception2, … {  }
@@ -804,11 +804,72 @@ class StaticBlock {
 
 ### 42 JIT Compilation
 
-### 43 Write a program to implement the Fibonacci series using for loop control structure
+### 43 Write a program to implement the Fibonacci series using for loop control structure?
+
+#### Program
+
+```java
+public class Fibbonic {
+    // 0 1 1 2 3 5 8 13 21 34 55
+    public static void main(String[] args) {
+        int a = 0;
+        int b = 1;
+        int no_Terms = 3;
+        if (no_Terms >= 1) {
+            System.out.println(a);
+            if (no_Terms >= 2) {
+                System.out.println(b);
+            }
+
+        }
+        for (int i = 2; i < no_Terms; i++) {
+            int fibb = a + b;
+            System.out.println(fibb);
+
+            // a --> b
+            // b --> fibb
+            a = b;
+            b = fibb;
+
+        }
+    }
+}
+
+```
 
 ### 44 What is string handling? && string handling functions && Write a program to append two strings in java. Write a program to reverse the string. && Write program in Java to convert a string in lower case to uppercase. && Write a program which produces alphabetical ordering of strings. For example if the input strings are “WAN”, “LAN” and “MAN” then program should output “LAN”, “MAN” and “WAN”. && Write a program to compare the two strings in java? && Explain different string handling functions and their syntax in java language
 
-### 45 Why there is no multiple inheritance in java? How to implement multiple inheritance in java using interface?
+#### Append Two Strings
+
+```java
+public class Append {
+    public static void main(String[] args) {
+        String strin = new String();
+        String str1 = "Abhi is";
+        String str2 = " also nav";
+        // Method -1
+
+        String finalString = str1 + str2;
+        System.out.println(finalString);
+
+        // Method -2
+
+        String str = str1.concat(str2);
+        System.out.println(str);
+
+        // Method - 3
+
+        System.out.println(String.join("", str1, str2));
+
+    }
+}
+```
+
+#### Convert Upper case to lower and vice-versa.
+
+```java
+
+```
 
 ### 46 Explain the concept of Java Streams. Write a program to copy the content of one text file to another. && I/O streams
 
@@ -819,16 +880,15 @@ class StaticBlock {
 ```java
 public class swap1 {
 
-    // swap using * / operator
+    // swap using + - operator
     public static void main(String[] args) {
         int a = 1456;
         int b = 789;
         System.out.println("a is " + a + " b is " + b);
         a = a + b; 
         b = a - b; 
-        a = a - b; 
+        a = a - b;  
         
-
         System.out.println("a is " + a + " b is " + b);
 
     }
