@@ -600,6 +600,11 @@ It also include methods to unwrap the objects back into the primitive data types
 ### 26 Explain about the applet and its life cycle. || Explain about the applet and its life cycle. || Difference between application and applet. || How do we pass parameters to applets in Java?
 
 [Applets Code](/Event_Handling/TryingApplets.java)
+<br>
+
+**Application Vs Applets**
+
+![app vs applets](/img/appvsappets.png)
 
 **Life Cycle of Applets**
 <br>
