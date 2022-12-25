@@ -590,8 +590,16 @@ public class throwVSthrows {
 ```
 
 ### 20 What is a Wrapper Class?
- 
+
+Wrapper classes in Java provides a way to wrap or represent the value of primitive data types as an object. By creating an object to the wrapper class, a data field is created and in this field we can store the value of a primitive data type.
+<br>
+It also include methods to unwrap the objects back into the primitive data types. It is one of the classes provided in the java.lang package and all of the primitive wrapper classes in Java are immutable.
+
+[Wrapper Class Resource](https://www.scaler.com/topics/java/wrapper-classes-in-java/)
+
 ### 26 Explain about the applet and its life cycle. || Explain about the applet and its life cycle. || Difference between application and applet. || How do we pass parameters to applets in Java && How do we pass parameters to applets in Java?
+
+[Applets Code](/Event_Handling/TryingApplets.java)
 
 ### 27 socket programming
 
