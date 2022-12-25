@@ -696,7 +696,76 @@ All its garbage collectors follow the same basic process. In the first step, __u
 
 ### 30 What is the meaning of first line of java program “public static void main (String args[])? 
 
-### 31 JVM is a platform dependent __(T/F)__. Justify your answer. 
+The syntax of the main method is always:
+```java
+public static void main(String[] args){
+	// some code
+}
+```
+You can change only the name of the String array argument. For example, you can change args to myStringArgs. The String array argument can be written as String... args or String args[].
+
+**public**
+
+The access modifier of the main method needs to be public so that the JRE can access and execute this method. If a method isn’t public, then access is restricted.
+
+**static**
+
+When the Java program starts, there is no object of the class present. The main method has to be static so that the JVM can load the class into memory and call the main method without creating an instance of the class first. 
+
+**void**
+
+Every Java method must provide the return type. The Java main method return type is void because it doesn’t return anything. When the main method is finished executing, the Java program terminates, so there is no need for a returned object. 
+
+**main**
+
+The Java main method is always named main. When a Java program starts, it always looks for the main method. 
+
+**String[] args**
+
+Java main method accepts a single argument of type String array. Each string in the array is a command line argument. You can use command line arguments to affect the operation of the program, or to pass information to the program, at runtime. The following example code shows how to print the command line arguments that you enter when you run the program:
+
+```java
+public class Test {
+
+	public static void main(String[] args){
+
+    	for(String s : args){
+		System.out.println(s);
+    	}
+	
+    }
+}
+```
+When you compile the program and then run it with a few command line arguments separated by spaces, the arguments get printed in the terminal:
+
+```bash
+javac Test.java 
+java Test 1 2 3 "Testing the main method"
+Output
+1
+2
+3
+Testing the main method
+```
+
+### 30** Can we execute a java program without main method? (NOT HAVING PROOF)
+
+**Yes**, we can execute a java program without a main method by using a static block.
+
+A static block in Java is a group of statements that gets executed only once when the class is loaded into the memory by ClassLoader, It is also known as a static initialization block, and it goes into the stack memory.
+```java
+class StaticBlock {
+    static
+    {
+        System.out.println(
+            "This class can be executed without main");
+        System.exit(0);
+    }
+}
+```
+
+### 31 JVM is a platform dependent __(T/F)__. Justify your answer.  && Explain what makes Java as platform independent language
+
 
 ### 32 Static members, type casting.
 
@@ -706,7 +775,7 @@ All its garbage collectors follow the same basic process. In the first step, __u
 
 ### 35 OOP principles
 
-### 36 Explain what makes Java as platform independent language.
+### 
 
 ### 37 Explain Multithreading. && What is difference between thread and a process? && How Java implements its Thread model? how we set priorities in threads. && Create Thread with both methods. (runnable interface + Thread Class).  && Thread Synchronization && Write a note on inter-thread communication and discuss how it can be accomplished.  && What is the functionality of using is alive () ?
 
