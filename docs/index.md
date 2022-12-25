@@ -238,7 +238,7 @@ List of prime number from 0 to 10
 5
 7
 ```
-### 16. What are different types of Inheritance supported by Java explain in detail? && What is multilevel inheritance? Write a program to demonstrate it.
+### 16. What are different types of Inheritance supported by Java explain in detail? && What is multilevel inheritance? Write a program to demonstrate it. && Demonstrate the use of Super keyword in inheritance with the help of example.
 
 **What is Inheritance** :- Inheritance is a propery that promtes code resuability. It is one of the most imporatnt pillar of Object Oriented Programming. It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. In Java, inheritance means creating new classes based on existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add new fields and methods to your current class as well.  
 
@@ -388,8 +388,132 @@ geek@g3: javac CLA.java
 geek@g3: java CLA abhinav
 My first Command line argument is abhinav
 ```
-### 18' Demonstrate the use of Super keyword in inheritance with the help of example. 
-### 18 What is difference between interface and abstract class? || xplain about interfaces. How they are different from the abstract classes? 
+
+### 18 What is difference between interface and abstract class? || Explain about interfaces. How they are different from the abstract classes? 
+
+![difference](https://i.pinimg.com/originals/01/72/f7/0172f77596304bea5f51e297d9674303.jpg)
+
+**Program for Abstract Class**
+
+```java
+abstract class Car {
+    public void color() {
+        System.out.println("I am Black in Color");
+    }
+
+    abstract void wheel();
+
+    abstract void engine();
+}
+
+class Thar extends Car {
+    void wheel() {
+        System.out.println("It has 4 wheel.");
+    }
+
+    void engine() {
+        System.out.println("It has 400 HP engine.");
+    }
+}
+
+public class Abstract {
+    public static void main(String[] args) {
+        Thar thar = new Thar();
+        thar.color();
+        thar.wheel();
+        thar.engine();
+    }
+
+}
+```
+
+***Interface Program***
+
+```java
+interface Phone {
+    void button();
+
+    void battery();
+    // Default keyword is used to incoperate definition of the method.
+    default void simSlot(){
+        System.out.println("I am a single sim Mobile with default behaviour.");
+    }
+
+}
+
+interface Smartphone {
+    void touch();
+
+    void camera();
+}
+
+class motrolaG51 implements Phone, Smartphone {
+    @Override
+    public void button() {
+        System.out.println("I Am button for power off/on");
+    }
+
+    @Override
+    public void battery() {
+        System.out.println("I am 5000maH bateery");
+    }
+
+    @Override
+    public void touch() {
+        System.out.println("I am 120Hz touch panel");
+    }
+
+    @Override
+    public void camera() {
+        System.out.println("I am 30Mpx Camera");
+    }
+
+}
+class motrolaG51A implements Phone, Smartphone {
+    @Override
+    public void button() {
+        System.out.println("I Am button for power off/on");
+    }
+
+    @Override
+    public void battery() {
+        System.out.println("I am 5000maH bateery");
+    }
+
+    @Override
+    public void touch() {
+        System.out.println("I am 120Hz touch panel");
+    }
+
+    @Override
+    public void camera() {
+        System.out.println("I am 30Mpx Camera");
+    }
+    @Override
+    public void simSlot(){
+        System.out.println("I am double sim Smartphone.");
+    }
+
+}
+
+public class Interface {
+    public static void main(String[] args) {
+        motrolaG51 m51 = new motrolaG51();
+        motrolaG51A m51A = new motrolaG51A();
+        m51.battery();
+        m51.button();
+        m51.camera();
+        m51.touch();
+        m51.simSlot();
+        m51A.battery();
+        m51A.button();
+        m51A.camera();
+        m51A.touch();
+        m51A.simSlot();
+        
+    }
+}
+```
 
 ### 19 What is the functionality of using is alive ()?
 
