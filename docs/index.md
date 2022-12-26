@@ -839,6 +839,10 @@ public class Fibbonic {
 
 ### 44 What is string handling? && string handling functions && Write a program to append two strings in java. Write a program to reverse the string. && Write program in Java to convert a string in lower case to uppercase. && Write a program which produces alphabetical ordering of strings. For example if the input strings are “WAN”, “LAN” and “MAN” then program should output “LAN”, “MAN” and “WAN”. && Write a program to compare the two strings in java? && Explain different string handling functions and their syntax in java language
 
+#### What is String Handling?
+
+A string is a collection of characters. In Java, a string is an object that represents a collection of objects. A string is a predefined class used to create string objects. It is an immutable object, which means it can’t be updated once created.
+
 #### Append Two Strings
 
 ```java

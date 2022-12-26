@@ -16,5 +16,8 @@ public class Reverse {
             result += originalString.charAt(i); 
         }
         System.out.println(result);
+
+        //Method 3
+        
     }
 }
